@@ -3,10 +3,7 @@ import minimist from "minimist"
 
 //Takes in the second argument from the command line
 const args = minimist(process.argv.slice(2))
-console.log(args);
-
-//Set number to 1 if there is no argument.
-let num = args['number'] || 1;
+const num = args['number'] || 1;
 
 //Makes an array of coinFlips;
 const array = coinFlips(num);
