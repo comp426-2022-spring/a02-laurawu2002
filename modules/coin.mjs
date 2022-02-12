@@ -61,11 +61,11 @@ function coinFlips(flips) {
 function countFlips(array) {
   let tails = 0;
   let heads = 0;
-  for(let item of array) {
-    if(item == "heads") {
+  for(let i = 0; i < array.length; i ++) {
+    if(array[i] == "heads") {
       heads++;
     }
-    else if(item == "tails") {
+    else if(array[i] == "tails") {
       tails++;
     }
   }
