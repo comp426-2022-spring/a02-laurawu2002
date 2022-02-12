@@ -6,7 +6,7 @@ const args = minimist(process.argv.slice(2))
 console.log(args);
 
 //Set number to 1 if there is no argument.
-const num = args['number'] || 1;
+let num = args['number'] || 1;
 
 //Makes an array of coinFlips;
 const array = coinFlips(num);
